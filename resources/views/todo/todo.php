@@ -9,8 +9,13 @@ task(to do list)
 
 <!--create page 
     form = (form di cosmo hanya ambil textarea dan submit button)
+<<<<<<< HEAD
             textarea
             submit button-->
+=======
+        textarea
+        submit button-->
+>>>>>>> 9e25ceea24d46475c63da2ac032f4fcdcbc10f49
 
     <!--csrf = tambah {{csrf_field()}} di dalam <form>-->
     <!--form action = value dari form tersebut di letakkan ke store terlebih dahulu
@@ -59,8 +64,9 @@ task(to do list)
 
 
 
-        
+
 <!--git
+
 git config --global user.name "k4k1kukek0"
 git config --global user.email "k4k1kukek0sm@gmail.com"
 
@@ -79,6 +85,7 @@ Create
 Read
 Update
 Delete/Destroy
+
 
 #CREATE
     <!--form = (form di cosmo hanya ambil textarea dan submit button)
@@ -100,5 +107,4 @@ Delete/Destroy
 
 #UPDATE
     
-
 

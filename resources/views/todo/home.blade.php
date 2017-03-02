@@ -8,6 +8,7 @@
         @foreach($todos as $todo)
             <li class="list-group-item">
                 <a href="/todo/{{ $todo->id }}"> {{ $todo->title }} </a>
+                {{ $todo->body }}
                 <span class="pull-right">{{ $todo->created_at->diffforHumans() }}</span>
             </li>
         @endforeach

@@ -37,15 +37,14 @@ class TodoController extends Controller
     {
         $todo = new Todo;
         $this->validate($request,[
+
             'body'=>'required',                 //table di PMAdmin = todos
             'title'=>'required|unique:todos',
         ]);
         //model = table (value)PMAdmin
         $todo->body = $request->body;
         $todo->title = $request->title;
-        $todo->save();
-        return redirect('/todo');
-    }
+
 
     /**
      * Display the specified resource.

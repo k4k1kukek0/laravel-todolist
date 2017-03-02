@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
+
     // dapatkan data dari database dan merubah nya
     public function getTitleAttribute($value)
     {
@@ -17,4 +18,5 @@ class Todo extends Model
     {
         return $this->attributes['title'] = ucfirst($value);
     }
-}
+
+
