@@ -44,7 +44,7 @@ class TodoController extends Controller
         //model = table (value)PMAdmin
         $todo->body = $request->body;
         $todo->title = $request->title;
-
+    }
 
     /**
      * Display the specified resource.
@@ -66,7 +66,8 @@ class TodoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $todo = Todo::find($id);
+        return view('todo.edit', compact('todo'));
     }
 
     /**

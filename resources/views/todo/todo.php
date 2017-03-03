@@ -105,6 +105,9 @@ Delete/Destroy
                  dan kirim data dari database menggunakan compact
     bikin tampilan form (show) nya tampilkan semua item-->
 
-#UPDATE
-    
+#UPDATE 
+    <!--form = extends dari todo.create(.blade.php) dan 
+           rubah title menjadi dinamis yang di ambil dari controller
+           menggunakan substr(),5 -->
+    controller = ke edit function dan arah kan ke view tampilan edit
 

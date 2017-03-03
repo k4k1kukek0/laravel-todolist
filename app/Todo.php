@@ -18,5 +18,4 @@ class Todo extends Model
     {
         return $this->attributes['title'] = ucfirst($value);
     }
-
-
+}                                                                                                                                                                                                                                
