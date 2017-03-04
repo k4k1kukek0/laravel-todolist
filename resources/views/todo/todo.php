@@ -138,5 +138,14 @@ partials session include
 - biar keren Edit button dengan icon(fa edit) di home.blade.php
 - di controller update buat SESUDAH (save) di buat session(flash) nama nya message 
                                                    #session->has('message',Update Succesfully)
+-dan di pisah kan session nya seperti sistem error
 
+<!--======================================-->
 
+#DELETE
+- make button delete
+- liat route list,url nya sama dengan update dan show tetapi method nya DELETE
+- buat form di dalam home.blade.php yg hanya berisikan (fa trash)
+  karna memerlukan csrf_field() dan method_field('DELETE')
+- di controller nya ambil datanya dengan model dan function todo->delete()
+- buat juga session untuk menampilkan bahwa delete nya berhasil 
