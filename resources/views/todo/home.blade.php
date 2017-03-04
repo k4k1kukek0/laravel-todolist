@@ -1,13 +1,15 @@
 @extends('layout.app')
 @section('body')
+    
+    @include('todo.partials.message')
     <br>
-    <div class="col-lg-6 col-lg-offset-3">
     <a href="todo/create" class="btn btn-info">Add new</a>
+    <div class="col-lg-6 col-lg-offset-3">
         <center><h1>Todo list</h1></center>
         <ul class="list-group col-lg-8">
         @foreach($todos as $todo)
             <li class="list-group-item">
-                <a href="/todo/{{ $todo->id }}"> {{ $todo->title }} </a>
+                <a href="/todo/{{ $todo->id }}">{{ $todo->title }}</a>
                 <span class="pull-right">{{ $todo->created_at->diffforHumans() }}</span>
             </li>
         @endforeach
@@ -15,7 +17,7 @@
         <ul class="list-group col-lg-4">
         @foreach($todos as $todo)
             <li class="list-group-item">
-                <a href="/todo/{{ $todo->id }}/edit"> Edit</a>
+                <a href="/todo/{{ $todo->id }}/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
             </li>
         @endforeach
         </ul>

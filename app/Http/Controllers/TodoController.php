@@ -52,7 +52,7 @@ class TodoController extends Controller
 
     public function update(Request $request, $id)
     {
-        $todo = todo::find($id);
+        $todo = Todo::find($id);
         $this->validate($request,[
 
             'body'=>'required',                 //table di PMAdmin = todos
@@ -62,6 +62,7 @@ class TodoController extends Controller
         $todo->body = $request->body;
         $todo->title = $request->title;
         $todo->save();
+        session()->flash('message','Updated Succesfully');  
         return redirect('/todo');
     }
 
