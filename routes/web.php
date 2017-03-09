@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('todo.home');
 });
 
 Route::resource('todo','TodoController');
+
+// Route::get('test', function() {
+//     return view('layout.master');
+// });

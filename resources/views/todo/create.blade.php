@@ -1,4 +1,4 @@
-@extends('layout.app')
+@extends('layout.master')
 @section('body')
     <br>
     <a href="/todo" class="btn btn-info">Back</a>

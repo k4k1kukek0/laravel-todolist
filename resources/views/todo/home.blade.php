@@ -1,9 +1,11 @@
-@extends('layout.app')
+@extends('layout.master')
 @section('body')
-    
-    @include('todo.partials.message')
+<div class="row">
+        <div class="col-lg-12">
+            @include('todo.partials.message')                                                
+        </div>
     <br>
-    <a href="todo/create" class="btn btn-info">Add new</a>
+    {{-- <a href="todo/create" class="btn btn-info">Add new</a> --}}
     <div class="col-lg-6 col-lg-offset-3">
         <center><h1>Todo list</h1></center>
         <ul class="list-group col-lg-8">
@@ -29,4 +31,5 @@
         @endforeach
         </ul>
     </div>
+</div>
 @endsection

@@ -1,9 +1,11 @@
-@extends('layout.app')
+@extends('layout.master')
 
 @section('body')
     <br>
-    <div class="col-lg-offset-4 col-lg-4"> 
-        <h1>{{ $todo->title }}</h1> 
-        <p>{{ $todo->body }}</p>
+    <div> 
+        <ul>
+                <h1>{{ $todo->title }}</h1> 
+                <p>{{ $todo->body }}</p>
+        </ul>
     </div>
 @endsection

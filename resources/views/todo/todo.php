@@ -149,3 +149,8 @@ partials session include
   karna memerlukan csrf_field() dan method_field('DELETE')
 - di controller nya ambil datanya dengan model dan function todo->delete()
 - buat juga session untuk menampilkan bahwa delete nya berhasil 
+
+#add local bottstrap di 
+-public css file(bootstrap.css) dan js file(bootstrap.js)  (https://www.bootstrapcdn.com/)
+
+#add middleware
